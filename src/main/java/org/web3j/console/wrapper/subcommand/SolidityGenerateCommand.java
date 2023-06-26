@@ -111,7 +111,8 @@ public class SolidityGenerateCommand implements Runnable {
                             packageName,
                             useJavaTypes,
                             primitiveTypes,
-                            addressLength)
+                            addressLength,
+                    true)
                     .generate();
         } catch (Exception e) {
             exitError(e);

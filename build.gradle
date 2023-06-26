@@ -19,7 +19,7 @@ mainClassName = 'org.web3j.console.Web3j'
 applicationName = 'web3j'
 
 ext {
-    web3jVersion = '4.9.4'
+    web3jVersion = '4.9.8'
     picocli = '4.6.0'
     slf4jVersion = '1.7.30'
     junitVersion = '5.8.2'
@@ -84,14 +84,14 @@ distTar {
 dependencies {
     api "org.web3j:abi:$web3jVersion"
 
-    implementation "org.web3j:codegen:$web3jVersion",
-            "org.web3j:contracts:$web3jVersion",
+    implementation "org.web3j:contracts:$web3jVersion",
             "org.web3j:core:$web3jVersion",
             "org.web3j:crypto:$web3jVersion",
             "org.web3j:hosted-providers:$web3jVersion",
             "io.epirus:epirus-web3j:$web3jEpirusVersion",
             "info.picocli:picocli:$picocli",
             files('libs/smartcheck.jar'),
+            files('libs/codegen-4.9.8.jar'),
             "javax.xml.bind:jaxb-api:$jaxbVersion",
             "com.sun.xml.bind:jaxb-core:$jaxbVersion",
             "com.sun.xml.bind:jaxb-impl:$jaxbVersion",
